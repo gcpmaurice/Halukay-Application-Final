@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Halukay</string>
+    <string-array name="category">
+        <item>Shoe</item>
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>Jacket</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#6de3ab"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/profile"
+            android:src="@drawable/person_m"/>
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/purch"
+            android:src="@drawable/ic_bag"/>
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="51dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:translationZ="90dp"
+        android:background="@color/black" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_id"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:translationZ="90dp"
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="71dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_id"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#6de3ab"
+        app:tabTextAppearance="@style/CustomText"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/white"/>
+
+</RelativeLayout>

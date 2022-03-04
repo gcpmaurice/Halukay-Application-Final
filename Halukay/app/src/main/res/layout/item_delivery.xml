@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#00000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/clicked_product"
+        android:background="@drawable/item_pr"
+       android:padding="10dp"
+        android:elevation="3dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/app_icon"
+            android:id="@+id/my_img"/>
+
+
+     <RelativeLayout
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@+id/my_img"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <LinearLayout
+             android:id="@+id/top"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="PHP: "/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/price"/>
+
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/sec"
+             android:layout_below="@+id/top"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Status: "/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="12sp"
+                 android:text="To Receive"
+                 android:id="@+id/myStatus"/>
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_below="@+id/sec"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Product: "/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="12sp"
+                 android:text="name"
+                 android:id="@+id/pname"/>
+
+         </LinearLayout>
+
+
+
+
+
+
+     </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered"
+            android:id="@+id/deliverBtn"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_et_bg"
+            android:padding="10dp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
